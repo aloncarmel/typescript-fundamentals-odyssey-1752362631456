@@ -1,0 +1,33 @@
+id: interface_exploration
+learningObjectives:
+  - Understand how interfaces function in TypeScript.
+hints:
+  - "Interfaces make code cleaner. Here's more: [Learn about
+    interfaces](https://www.typescriptlang.org/docs/handbook/typescript-in-5-mi\
+    nutes-func.html)."
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Types are versatile, but let's elevate the game with interfaces.
+          - text: Interfaces help you define the structure of an object, dictating the
+              compulsory fields and their types.
+          - text: "Consider defining an interface like so: `interface User { name: string;
+              age: number; }`."
+          - text: You can use this blueprint when creating an object ensuring it adheres to
+              the specified structure.
+          - text: With interfaces, you get readable, reusable code that minimizes accidental
+              errors. Dive into more examples
+              [here](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces).
+          - text: Once you're squared with interfaces, let's advance to another aspect of
+              TypeScript.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
