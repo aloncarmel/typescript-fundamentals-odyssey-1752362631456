@@ -6,10 +6,6 @@ description: >-
   learn how to enhance your JavaScript code with this robust, typed superset.
   TypeScript enables developers to build better-structured, more predictable
   code by providing a statically typed environment. 
-
-  Dive into the fundamentals such as type annotations, interfaces, and classes—core components that will make your code more reliable and maintainable. You'll also encounter TypeScript's powerful tooling, which helps you catch errors before running your code, saving time and frustration.
-
-  By the end of this quest, you'll not only understand TypeScript's basics but also appreciate its role in modern JavaScript development. Become more productive and create applications with increased confidence by leveraging the benefits of TypeScript. Get ready to transform your coding experience with a sprinkle of dry humor and motivation along the way!
 level: beginner
 duration: 1
 skills:
