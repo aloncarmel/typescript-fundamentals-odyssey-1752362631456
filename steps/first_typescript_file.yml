@@ -1,0 +1,33 @@
+id: first_typescript_file
+learningObjectives:
+  - Create and compile your first TypeScript file.
+hints:
+  - Ensure TypeScript is installed globally using npm. Need help? Here's a
+    [link](https://www.typescriptlang.org/download).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Alright, installation's checked off. Ready to create magic with your first
+              TypeScript file?
+          - text: First, spin up a file with the traditional `.ts` extension. Let's name her
+              `hello.ts`.
+          - text: "Inside, write a simple program: `let message: string = 'Hello,
+              TypeScript!'; console.log(message);`."
+          - text: "To compile it to JavaScript, use the TypeScript compiler: `tsc hello.ts`
+              which generates a `hello.js.`"
+          - text: Congrats, you've just compiled your first TypeScript file! Now it's time
+              to shine further! Check out a [beginner's
+              guide](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+          - text: When you’re ready to flex some more TypeScript muscle, punch that button
+              for the next challenge.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
