@@ -1,0 +1,31 @@
+id: installing_typescript
+learningObjectives:
+  - Learn how to set up TypeScript in your project.
+hints:
+  - Refer to the [TypeScript download
+    page](https://www.typescriptlang.org/download) for installation
+    instructions.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Now that you've dabbled with the concept, let's make TypeScript a part of
+              your project.
+          - text: "Installing TypeScript is a breeze. You'll typically use npm to install it
+              globally: `npm install -g typescript`."
+          - text: Once installed, you can verify the installation by executing `tsc -v` in
+              your command line. Try it out if you're in a place you can run
+              terminal commands now.
+          - text: Ready to take TypeScript for a spin? Check out [the installation
+              guide](https://www.typescriptlang.org/download).
+          - text: When you’re set, let’s wander over to the next step.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
