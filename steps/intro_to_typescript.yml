@@ -1,0 +1,32 @@
+id: intro_to_typescript
+learningObjectives:
+  - Understand what TypeScript is and its purpose.
+hints:
+  - TypeScript offers static typing. Check out [this
+    guide](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Welcome to the TypeScript Fundamentals Odyssey! 🎉 As a coder, you might
+              often find yourself wishing JavaScript was a bit more...
+              predictable. That's where TypeScript enters the scene.
+          - text: TypeScript is a typed superset of JavaScript that compiles back to plain
+              JavaScript. This means you can catch errors at compile time,
+              saving you quite the headache!
+          - text: "The idea is simple: by adding type safety, TypeScript improves the
+              quality and maintainability of your code."
+          - text: Want to see the benefits in action? Let's get rolling! Dive deeper by
+              exploring [TypeScript's official
+              site](https://www.typescriptlang.org/).
+          - text: When you’re ready for the next nugget of wisdom, hit that 'Next' button.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
