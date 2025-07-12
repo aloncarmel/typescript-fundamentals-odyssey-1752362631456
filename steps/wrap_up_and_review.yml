@@ -1,0 +1,42 @@
+id: wrap_up_and_review
+learningObjectives:
+  - Review and consolidate TypeScript basics learned.
+hints:
+  - Revisit TypeScript concepts and remember why static typing matters.
+  - "Read more advanced materials here: [TypeScript
+    Handbook](https://www.typescriptlang.org/docs/handbook/advanced-types.html)\
+    ."
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: We're at the final chapter of our TypeScript basics journey. Time to
+              reflect on what you'll carry forward!
+          - text: From understanding TypeScript's raison d'être to embracing static typing,
+              interfaces, and classes, you've covered commendable ground.
+          - text: TypeScript isn't about complicating JavaScript; it's about bringing order
+              to your coding universe by catching errors early on.
+          - text: "Keep practicing and bake these concepts into your daily coding sessions.
+              Explore more advanced TypeScript features here: [Advanced
+              TypeScript](https://www.typescriptlang.org/docs/handbook/advanced\
+              -types.html)."
+          - text: Let out a little cheer—you conquered this quest!
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: bot_message
+        params:
+          person: lucca
+          messages:
+            - text: Fantastic job completing the TypeScript Fundamentals Odyssey! 🏆 You now
+                have the foundation to explore more advanced TypeScript
+                concepts. Remember, embracing TypeScript means fewer bugs and
+                more reliable code. Keep experimenting, and see you in the next
+                quest!
+      - actionId: finish_step
