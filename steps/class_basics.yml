@@ -1,0 +1,31 @@
+id: class_basics
+learningObjectives:
+  - Explore basic classes in TypeScript.
+hints:
+  - Classes streamline code organization. Check out [this class
+    guide](https://www.typescriptlang.org/docs/handbook/classes.html).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Interfaces were fun, but let's now roll into the realm of classes!
+          - text: Classes in TypeScript provide a familiar OOP structure where you define a
+              blueprint for objects.
+          - text: "Here's a simple class: `class Animal { name: string; constructor(name:
+              string) { this.name = name; } speak() { console.log(`${this.name}
+              makes a noise.`); } }`."
+          - text: Classes make reading, maintaining, and organizing your code more
+              efficient.
+          - text: Familiarize with class nuances in TypeScript
+              [here](https://www.typescriptlang.org/docs/handbook/classes.html).
+          - text: Eager for more TypeScript mysteries? Keep going!
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
