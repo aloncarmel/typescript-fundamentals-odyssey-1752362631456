@@ -1,0 +1,32 @@
+id: understanding_types
+learningObjectives:
+  - Explore the concept of static typing in TypeScript.
+hints:
+  - Understanding types is crucial. Refer to [this
+    documentation](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html).
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: "Now, onto the crux of TypeScript's charm—types! You've noticed `message:
+              string` in the previous example, right?"
+          - text: This is static typing at work! You're explicitly defining the type of
+              variable `message` as a string.
+          - text: By setting types, we avoid assignments like `message = 42;` which a
+              friendly error will flag during compilation.
+          - text: This level of strictness ensures your code behaves as expected and reduces
+              runtime errors dramatically.
+          - text: Curious for more about types? Here's the [typing
+              overview](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html).
+          - text: Take a deep breath, then let’s uncover more TypeScript wonders in the next
+              step.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
